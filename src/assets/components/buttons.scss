@@ -1,0 +1,31 @@
+@import './src/assets/colors';
+
+.mp-button {
+  &.mat-mdc-raised-button {
+    height: 32px;
+    border-radius: 16px;
+    color: #fff !important;
+    background: $green !important;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &-large {
+    &.mat-mdc-raised-button {
+      height: 46px;
+      border-radius: 23px;
+    }
+  }
+
+  &-black {
+    &.mat-mdc-raised-button {
+      background: #000 !important;
+    }
+  }
+}
+
+.mp-subscribe-button {
+  &.mat-mdc-raised-button {
+
+  }
+}

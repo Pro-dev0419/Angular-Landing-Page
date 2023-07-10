@@ -1,0 +1,451 @@
+@import "src/assets/colors";
+
+/*** header css start ***/
+.app-toolbar {
+    background: rgb(58,78,67);
+    background: linear-gradient(90deg, rgba(58,78,67,1) 0%, rgba(28,28,28,1) 100%);
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    height: 74px;
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+.app-toolbar-row {
+    height: inherit;
+}
+/*** header css end ***/
+
+/*** main header banner css start ***/
+.custom-header{
+
+}
+
+.bg-anima {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+}
+
+.bg-splash {
+  background: url("../assets/images/homepage/splash.png") no-repeat bottom;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-overlay {
+    background: #000000;
+    opacity: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+.title-xlarge {
+    text-transform: uppercase;
+    // line-height: 54px;
+    // font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    z-index: 100;
+    .light{
+        font-style: normal;
+        font-weight: 300;
+    }
+}
+.custom-title-excerpt {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    // font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+    z-index: 100;
+}
+.header-banner-btn {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 30px;
+    mat-icon{
+        font-size: 50px;
+        height: 50px;
+        width: 50px;
+        color: #fff;
+    }
+}
+/*** main header banner css end ***/
+
+/*** section css start ***/
+.menu-section {
+  padding: 20px 0;
+  background: #fff;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+.menu-section--main {
+  z-index: 2;
+}
+.section-title {
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    line-height: 1;
+    font-size: 2.5rem;
+
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 12px;
+    text-decoration-color: $green;
+}
+.section-title-border {
+    width: 50px;
+    height: 2px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fb3e3e;
+}
+.section-subtitle {
+    letter-spacing: 0.02em;
+    color: #a8aeb4;
+    padding: 20px 0;
+    text-align: justify;
+}
+/*** section css end ***/
+
+/*** Who we are ***/
+.animation-who-we-are {
+  top: 0;
+  width: 465px;
+  right: 0;
+
+  @media only screen and (min-width: 880px) {
+    opacity: 0.2;
+  }
+}
+
+.img-who-we-are img {
+  width: unset;
+  height: 300px;
+}
+
+/*** Our Areas Of Proficiency section css start ***/
+.service-box {
+    padding: 8px 24px;
+    background-color: $green-light;
+    margin: 16px 0;
+    box-shadow: none;
+    align-items: stretch !important;
+}
+.service-box-icon {
+    font-size: 32px;
+    height: 68px;
+    width: 68px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 1.25rem rgba(108,118,134,.1)!important;
+    line-height: 68px;
+}
+.service-box-content-list {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 16px;
+    list-style-type: none;
+}
+
+.areas-curve {
+  width: 100%;
+  position: absolute;
+
+  z-index: 1;
+
+  @media only screen and (min-width: 959px) {
+    top: -150px;
+  }
+  @media only screen and (min-width: 1227px) {
+    top: -176px;
+  }
+  @media only screen and (min-width: 1364px) {
+    top: -190px;
+  }
+  @media only screen and (min-width: 1514px) {
+    top: -255px;
+  }
+}
+
+.animation-our-areas {
+  width: 135px;
+  left: 100px;
+  top: 30px;
+
+  @media only screen and (min-width: 960px) {
+    opacity: 1;
+  }
+}
+/*** Our Areas Of Proficiency section css end ***/
+
+/*** Learn With Our Blogs section ***/
+.service-box-blog {
+  padding: 0 0 8px;
+
+  .mat-mdc-card-header {
+    padding: 0;
+  }
+
+  .mat-mdc-card-content {
+    padding: 0 26px;
+  }
+
+  .mdc-card__actions {
+    padding: 8px 26px;
+  }
+}
+
+.animation-learn-blogs-1 {
+  right: 0;
+  width: 355px;
+
+  @media only screen and (min-width: 960px) {
+    opacity: 1;
+  }
+}
+
+.animation-learn-blogs-2 {
+  left: 75px;
+  top: 40px;
+  width: 190px;
+
+  @media only screen and (min-width: 960px) {
+    opacity: 1;
+  }
+}
+
+/*** our store css start ***/
+.our-store-item:hover{
+    transform: scale(1.03);
+    h3{
+        font-weight: 700;
+        color: #ffd740 !important;
+    }
+}
+.store-name{
+    position: absolute;
+    left: 15px;
+    bottom: 0px;
+}
+/*** our store css end ***/
+
+/*** Get a Free Quote css start ***/
+.tabs-group {
+  max-width: 600px;
+  background-color: $blue;
+  padding: 30px 40px;
+}
+/*** Get a Free Quote css end ***/
+
+mat-form-field.mat-form-field.mat-white {
+&.mat-focused {
+    .mat-form-field-label {
+        color: #FAFAFA;
+    }
+    .mat-form-field-ripple {
+        background-color: #FAFAFA !important;
+    }
+}
+.mat-form-field-label,.mat-form-field-label.mat-focused,
+.mat-form-field.mat-focused.matform-field-should-float {
+    color: #FAFAFA;
+}
+.mat-form-field-underline, .mat-form-field-underline.mat-focused {
+    background-color: #FAFAFA;
+    }
+}
+
+/*** Our goal section ***/
+.our-goal-background {
+  background-color: #000;
+
+  .our-goal-inner {
+    margin-bottom: 30px;
+  }
+}
+
+/*** Why Choose Us section ***/
+.img-business-target img {
+  max-height: 400px;
+}
+
+/*** Subscription section ***/
+.subscription-background {
+  background-color: #000;
+  padding: 80px 0;
+}
+
+/*Clearing Floats*/
+.cf:before, .cf:after{
+  content:"";
+  display:table;
+}
+
+.cf:after{
+  clear:both;
+}
+
+.cf{
+  zoom:1;
+}
+/* Form wrapper styling */
+
+.search-wrapper {
+  width: 450px;
+  margin-left: 20px;
+  border-radius: 40px;
+  background: $green;
+}
+
+/* Form text input */
+
+.search-wrapper input {
+  width: 300px;
+  height: 20px;
+  padding: 10px 20px;
+  float: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border: 0;
+  background: $green;
+  border-radius: 40px;
+  border-top-style: none;
+  box-shadow: none;
+}
+
+.search-wrapper input::-webkit-input-placeholder {
+//.search-wrapper input:-moz-placeholder,
+//.search-wrapper input::-moz-placeholder,
+//.search-wrapper input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.search-wrapper input:focus {
+  outline: 0;
+}
+
+/* Form submit button */
+.search-wrapper button {
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 110px;
+  color: $green;
+  text-transform: uppercase;
+  background: #fff;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px -3px #000;
+  font-weight: 600;
+}
+
+.search-wrapper button:hover{
+  /*     background: #e54040; */
+}
+
+.search-wrapper button:active,
+.search-wrapper button:focus{
+  outline: 0;
+}
+
+.search-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+  border: 0;
+  padding: 0;
+}
+
+.curved-div {
+  position: relative;
+  //background: linear-gradient(90deg, rgb(58, 78, 67) 0%, rgb(28, 28, 28) 100%);
+  //background: url('../assets/images/svg/vector-2.svg');
+  background: url('../assets/images/svg/vector-2.svg') top center no-repeat, url('../assets/images/homepage/reviews.gif') no-repeat;
+  color: #FFF;
+  text-align: center;
+  overflow: hidden;
+}
+.curved-div svg {
+  display: block;
+}
+.curved-div.upper {
+  background: #fff;
+}
+.curved-div h2 {
+  //font-size: 6rem;
+  margin-top:0;
+}
+.curved-div p {
+  //font-size: 1rem;
+  margin:0 5rem 0 5rem;
+}
+
+.bg-animation {
+  background: url('../assets/images/svg/vector-2.svg') top center no-repeat, url('../assets/images/homepage/new/reviews.gif') repeat;
+  background-size: 100%;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.bubbles-container {
+  margin: 30px 40px 30px;
+
+  @media only screen and (min-width: 992px) {
+    margin: 110px 40px 30px;
+  }
+  @media only screen and (min-width: 1200px) {
+    margin: 150px 40px 30px;
+  }
+  @media only screen and (min-width: 1810px) {
+    margin: 290px 40px 30px;
+  }
+}
+
+.bubble {
+  position: relative;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: 300px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 24px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 35px;
+}
+
+.bubble-bottom-left:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 40px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 40%;
+  bottom: -21px;
+}

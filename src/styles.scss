@@ -1,0 +1,132 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import './assets/components/buttons';
+@import './assets/components/inputs';
+@import './assets/components/tabs';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+*:not(.material-icons) {
+  font-family: 'Poppins', sans-serif !important;
+  font-style: normal;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+/* common css start */
+.text-center {
+    text-align: center !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.w-85 {
+  width: 85% !important;
+}
+.color-white{
+    color: #fff !important;
+}
+.color-black{
+    color: #000 !important;
+}
+.primary-background{
+    background-color: #673ab7 !important;
+}
+.primary-background-op1{
+    background-color: #673ab740;
+}
+.primary-color{
+    color: #673ab7 !important;
+}
+.pd0{
+    padding: 0 !important;
+}
+.pd0-t{
+    padding-top: 0 !important;
+}
+.pd0-b{
+    padding-bottom: 0 !important;
+}
+.pd0-l{
+    padding-left: 0 !important;
+}
+.pd0-r{
+    padding-right: 0 !important;
+}
+.pd16{
+    padding: 16px !important;
+}
+.pd16-t{
+    padding-top: 16px !important;
+}
+.pd16-b{
+    padding-bottom: 16px !important;
+}
+.pd16-l{
+    padding-left: 16px !important;
+}
+.pd16-r{
+    padding-right: 16px !important;
+}
+.pd32-t{
+    padding-top: 32px !important;
+}
+.pd32-b{
+    padding-bottom: 32px !important;
+}
+.pd32-r{
+  padding-right: 32px !important;
+}
+.mrg0{
+    margin: 0 !important;
+}
+.mrg8-t{
+    margin-top: 8px !important;
+}
+.mrg8-b{
+    margin-bottom: 8px !important;
+}
+.mrg8-tb{
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+.mrg16-t{
+    margin-top: 16px !important;
+}
+.mrg16-b{
+    margin-bottom: 16px !important;
+}
+.mrg16-l{
+    margin-left: 16px !important;
+}
+.mrg16-r{
+    margin-right: 16px !important;
+}
+.mrg20-t{
+    margin-top: 20px !important;
+}
+.mrg20-b{
+    margin-bottom: 20px !important;
+}
+.mrg20-l{
+    margin-left: 20px !important;
+}
+.mrg20-r{
+    margin-right: 20px !important;
+}
+.mrg32-r{
+    margin-right: 32px;
+}
+.mrg32-l{
+    margin-left: 32px;
+}
+.mrg64-r{
+    margin-right: 64px;
+}
+.mrg64-l{
+    margin-left: 64px;
+}
+/* common css end */

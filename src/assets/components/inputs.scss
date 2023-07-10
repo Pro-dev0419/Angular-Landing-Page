@@ -1,0 +1,33 @@
+@import './src/assets/colors';
+
+.mp-field {
+  &.mat-mdc-form-field {
+    .mat-mdc-text-field-wrapper {
+      background-color: #fff;
+    }
+
+    .mat-mdc-form-field-flex {
+      min-height: 44px;
+    }
+
+    .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+      min-height: 24px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__leading {
+      border-top-left-radius: 13px;
+      border-bottom-left-radius: 13px;
+    }
+
+    .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__trailing {
+      border-top-right-radius: 13px;
+      border-bottom-right-radius: 13px;
+    }
+
+    .mdc-text-field {
+      border-radius: 13px;
+    }
+  }
+}

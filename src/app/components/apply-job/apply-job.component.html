@@ -1,0 +1,37 @@
+<form [formGroup]="applyJobForm" novalidate (ngSubmit)="onSubmit()" class="mrg20-t mrg20-b">
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+      <mat-form-field fxFlex="100" appearance="outline" class="mp-field">
+        <input matInput placeholder="Enter your full name" formControlName="fullName">
+        <mat-error *ngIf="applyJobForm.controls['fullName'].hasError('required')">
+          Full name is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field fxFlex="100" appearance="outline" class="mp-field">
+        <input matInput placeholder="Enter your email address" formControlName="email">
+        <mat-error *ngIf="applyJobForm.controls['email'].hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field fxFlex="100" appearance="outline" class="mp-field">
+        <input matInput placeholder="Enter your contact no." formControlName="contact">
+        <mat-error *ngIf="applyJobForm.controls['contact'].hasError('required')">
+          Contact number is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field fxFlex="100" appearance="outline" class="mp-field">
+        <input matInput placeholder="Enter applying for" formControlName="postAppliedFor">
+        <mat-error *ngIf="applyJobForm.controls['postAppliedFor'].hasError('required')">
+          Applying for is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field fxFlex="100" appearance="outline" class="mp-field">
+        <textarea matInput placeholder="Enter your portfolio" formControlName="portfolio"></textarea>
+        <mat-error *ngIf="applyJobForm.controls['portfolio'].hasError('required')">
+            Portfolio is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <button class="mp-button mp-button-black" mat-raised-button color="primary" type="submit">Submit</button>
+    </div>
+</form>

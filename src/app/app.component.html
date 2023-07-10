@@ -1,0 +1,348 @@
+<div fxLayout="column" fxFill>
+  <!-- Header Toolbar -->
+  <!-- <app-header></app-header> -->
+  <mat-toolbar color="primary" class="app-toolbar mat-elevation-z6">
+    <mat-toolbar-row class="app-toolbar-row">
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <img width="40" alt="Angular Logo"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+      />
+      <span fxFlex>Welcome</span>
+      <span class="menu-spacer"></span>
+      <div fxShow="true" fxHide.lt-md>
+        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+        <a class="mat-body" href="#who-we-are-section" mat-button>Who We Are</a>
+        <a class="mat-body" href="#our-goal-section" mat-button>Our Goal</a>
+        <a class="mat-body" href="#" mat-button>Our Results</a>
+        <a class="mat-body" href="#why-choose-us-section" mat-button>Why Choose Us</a>
+        <a class="mat-body" href="#our-proficiency-section" mat-button>Services</a>
+        <a class="mat-body" href="#our-store-section" mat-button>E-Commerce</a>
+        <a class="mat-body" href="#blogs-section" mat-button>Blog</a>
+        <a class="mat-body mp-button mp-button-large" href="#get-free-quote-section" mat-raised-button>Get a Free Quote</a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-sidenav-container fxFlex>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+        <a class="mat-body" href="#who-we-are-section" (click)="sidenav.toggle()" mat-list-item>Who We Are</a>
+        <a class="mat-body" href="#our-goal-section" (click)="sidenav.toggle()" mat-list-item>Our Goal</a>
+        <a class="mat-body" href="#" (click)="sidenav.toggle()" mat-list-item>Our Results</a>
+        <a class="mat-body" href="#why-choose-us-section" (click)="sidenav.toggle()" mat-list-item>Why Choose Us</a>
+        <a class="mat-body" href="#our-proficiency-section" (click)="sidenav.toggle()" mat-list-item>Services</a>
+        <a class="mat-body" href="#our-store-section" (click)="sidenav.toggle()" mat-list-item>E-Commerce</a>
+        <a class="mat-body" href="#blogs-section" (click)="sidenav.toggle()" mat-list-item>Blog</a>
+        <a class="mat-body" href="#get-free-quote-section" (click)="sidenav.toggle()" mat-list-item>Get a Free Quote</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content fxLayout="column" fxFlexFill>
+      <!-- after header banner section -->
+      <section fxFlexFill fxLayout="column" fxLayoutAlign="center center" class="custom-header pd16">
+        <div class="bg-overlay"></div>
+        <div class="bg-splash"></div>
+        <div fxFlex></div>
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <div class="title-xlarge mat-headline-4 mrg0">
+            <span>
+              <span class="light">Award-Winning<br></span>
+              Digital Agency
+            </span>
+          </div>
+        </div>
+        <div class="custom-title-excerpt mat-h2">
+          Our work in digital marketing has been recognised through both national and international accreditation - most recently in Clutch’s recognition of its top digital marketing agencies of 2021 and Suffolk Business Awards 'Start Up Business of the Year'.
+        </div>
+        <button mat-icon-button aria-label="view more" class="header-banner-btn" (click)="anchorNavigation('#who-we-are-section')">
+          <mat-icon>arrow_downward</mat-icon>
+        </button>
+      </section>
+
+      <!-- Who we are section -->
+      <section fxLayout="column" fxLayoutAlign="start center" id="who-we-are-section" class="text-center menu-section">
+        <div fxLayout="row" class="menu-section--main">
+          <div fxFlex fxLayout="row wrap" fxLayoutAlign="space-around">
+            <div fxFlex.gt-sm="10"></div>
+            <div fxLayout="column" fxLayoutAlign="start center" fxFlex.xs="100" fxFlex.sm="46" fxFlex.gt-sm="44">
+              <div class="section-subtitle mat-body img-who-we-are">
+                <img src="assets/images/homepage/new/social-media-influencer.gif" alt="">
+              </div>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="start baseline" fxFlex.xs="100" fxFlex.sm="46" fxFlex.gt-sm="44">
+              <h2 class="section-title">Who We Are?</h2>
+              <div class="section-subtitle mat-body">
+                <p>This is a leading software agency providing various services to businesses around the world.<br/>Our professional team is based in USA.</p>
+              </div>
+              <a href="#" class="mp-button" mat-raised-button color="primary">See More</a>
+            </div>
+            <div fxFlex.gt-sm="10"></div>
+          </div>
+        </div>
+        <div class="bg-anima animation-who-we-are">
+          <img src="assets/images/homepage/new/chip.gif" alt="">
+        </div>
+      </section>
+
+      <!-- Our Goal section -->
+      <section fxLayout="column" fxLayoutAlign="start center" id="our-goal-section" class="text-center menu-section our-goal-background">
+        <div fxLayout="row" class="our-goal-inner">
+          <div fxFlex fxLayout="row wrap" fxLayoutAlign="space-around">
+            <div fxFlex.gt-sm="5"></div>
+            <div fxLayout="column" fxLayoutAlign="start baseline" fxFlex.xs="100" fxFlex.sm="46" fxFlex.gt-sm="38">
+              <h2 class="section-title color-white">Our Goal Is Simple</h2>
+              <div class="section-subtitle mat-body color-white">
+                <p>To get your brand the results and recognition it deserves- as quickly, profitabolity and sustainably as possible.</p>
+              </div>
+              <a href="#" class="mp-button" mat-raised-button color="primary">See More</a>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="start center" fxFlex.xs="100" fxFlex.sm="46" fxFlex.gt-sm="38">
+              <img src="assets/images/homepage/new/business-team.gif" alt="">
+            </div>
+            <div fxFlex.gt-sm="5"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Areas Of Proficiency section -->
+      <section fxLayout="column" fxLayoutAlign="start center" id="our-proficiency-section" class="text-center menu-section">
+        <div class="areas-curve">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,32L40,64C80,96,160,160,240,165.3C320,171,400,117,480,96C560,75,640,85,720,106.7C800,128,880,160,960,170.7C1040,181,1120,171,1200,170.7C1280,171,1360,181,1400,186.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+        </div>
+        <div class="menu-section--main">
+          <h2 class="section-title">Our Areas Of Proficiency</h2>
+          <div class="section-subtitle mat-body">
+            <p>This is a full-service agency, which means it provides you many services.
+              <br/>A few examples of our agency services we offer include:
+            </p>
+          </div>
+        </div>
+        <div fxLayout="row" class="menu-section--main w-100">
+          <div fxFlex.gt-xs="10"></div>
+          <div fxFlex fxLayout="row wrap" fxLayoutAlign="space-around">
+            <mat-card fxFlex.xs="100" fxFlex.sm="48" fxFlex.gt-sm="32" fxLayout="column" fxLayoutAlign="start center" class="service-box" *ngFor="let service of services">
+              <mat-card-header fxLayout="column" fxLayoutAlign="start center">
+                <div class="service-box-icon">
+                  <mat-icon color="primary">{{service.icon}}</mat-icon>
+                </div>
+                <h4 class="mat-headline-6 mrg16-t mrg16-b">{{service.name}}</h4>
+              </mat-card-header>
+              <mat-card-content>
+                <ul class="mat-body service-box-content-list">
+                  <li>Web Research</li>
+                  <li>Data Entry</li>
+                  <li>LinkedIn Lead Generation</li>
+                  <li>Paraphrasing</li>
+                  <li>LinkedIn List Building</li>
+                  <li>Data Mining</li>
+                </ul>
+              </mat-card-content>
+              <div fxFlex></div>
+              <mat-card-actions class="mrg16-b">
+                <a href="#" class="mp-button" mat-raised-button color="primary">View Details</a>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+          <div fxFlex.gt-xs="10"></div>
+        </div>
+        <div class="bg-anima animation-our-areas">
+          <img src="assets/images/homepage/new/blockchain.gif" alt="">
+        </div>
+        <div *ngIf="services.length < servicesStored.length" fxLayout="row" class="menu-section--main pd32-t pd32-b w-100">
+          <div fxFlex.gt-xs="10"></div>
+          <div fxFlex fxLayout="row wrap" fxLayoutAlign="end end" style="max-width: 1550px">
+            <button class="mp-button mp-button-black" mat-raised-button color="primary" type="submit" (click)="showAllService()">Explore more</button>
+          </div>
+          <div fxFlex.gt-xs="10"></div>
+        </div>
+      </section>
+
+      <!-- newsletter subscription section -->
+      <section fxLayout="column" fxLayoutAlign="center center" id="newsletter-subscription-section" class="text-center menu-section subscription-background">
+        <div fxLayout="row">
+          <div fxFlex fxLayout="row wrap" fxLayoutAlign="space-around">
+            <div fxLayout="column" fxLayoutAlign="start baseline" fxFlex.xs="100" fxFlex.sm="48" fxFlex.gt-xs="60">
+              <h2 fxFlex class="section-title mrg0 color-white">Subscribe for Newsletter</h2>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="start baseline" fxFlex.xs="100" fxFlex.sm="48" fxFlex.gt-xs="40">
+              <div class="search-wrapper cf">
+                <input type="text" placeholder="Enter your email" />
+                <button type="submit">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us section -->
+      <section fxLayout="column" fxLayoutAlign="start center" id="why-choose-us-section" class="text-center menu-section">
+        <div fxLayout="row">
+          <div fxFlex fxLayout="row wrap" fxLayoutAlign="space-around">
+            <div fxFlex.gt-sm="10"></div>
+            <div fxLayout="column" fxLayoutAlign="start baseline" fxFlex.xs="100" fxFlex.sm="46" fxFlex.gt-sm="38">
+              <h2 class="section-title">Why Choose Us</h2>
+              <div class="section-subtitle mat-body">
+                <p>Highly skilled professionals who possess expertise in diverse Business and Technology areas make up our team.<br/>
+                  To provide world class service we employ the best technicians, adhere to proven methodology, provide superior client<br/> service and become a true
+                  business partner in every project.</p>
+              </div>
+              <a href="#" class="mp-button" mat-raised-button color="primary">More details</a>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="start center" fxFlex.xs="100" fxFlex.sm="46" fxFlex.gt-sm="38">
+              <div class="section-subtitle mat-body img-business-target">
+                <img src="assets/images/homepage/new/business-target-achievement.gif" alt="">
+              </div>
+            </div>
+            <div fxFlex.gt-sm="10"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Results & Viewers section -->
+      <section fxLayout="column" fxLayoutAlign="start center" id="our-results-viewers" class="text-center menu-section bg-viewers">
+        <div style="width: 100%; position: relative">
+          <div class="bg-animation">
+            <h2 class="section-title color-white">Our Results & Viewers</h2>
+            <p class="section-subtitle mat-body color-white" style="text-align: center">
+              You Are not The First, We Have A track Record Of Success
+            </p>
+            <div fxLayout="row">
+              <div class="bubbles-container" fxFlex fxLayout="row wrap" fxLayoutAlign="space-around">
+                <div class="bubble bubble-bottom-left">
+                  Type any text here and the bubble will grow to fit the text no matter how many lines.  Isn't that nifty?
+                </div>
+                <div class="bubble bubble-bottom-left">
+                  Type any text here and the bubble will grow to fit the text no matter how many lines.  Isn't that nifty?
+                </div>
+                <div class="bubble bubble-bottom-left">
+                  Type any text here and the bubble will grow to fit the text no matter how many lines.  Isn't that nifty?
+                </div>
+                <div class="bubble bubble-bottom-left">
+                  Type any text here and the bubble will grow to fit the text no matter how many lines.  Isn't that nifty?
+                </div>
+                <div class="bubble bubble-bottom-left">
+                  Type any text here and the bubble will grow to fit the text no matter how many lines.  Isn't that nifty?
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learn With Our Blogs section -->
+      <section fxLayout="column" fxLayoutAlign="start center" id="blogs-section" class="text-center menu-section">
+        <div class="menu-section--main">
+          <h2 class="section-title">Learn With Our Blogs</h2>
+          <div class="section-subtitle mat-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br/>
+              Deleniti, quo ab rem vel eius hic pariatur, velit repellat animi ex laudantium. <br/>
+              Incidunt, itaque dicta inventore cupiditate iste nostrum rem non!</p>
+          </div>
+        </div>
+        <div fxLayout="row" class="menu-section--main">
+          <div fxFlex.gt-xs="10"></div>
+          <div fxFlex fxLayout="row wrap" fxLayoutAlign="space-around">
+            <mat-card fxFlex.xs="100" fxFlex.sm="48" fxFlex.gt-sm="32" fxLayout="column" fxLayoutAlign="start center" class="service-box service-box-blog" *ngFor="let blog of blogs">
+              <mat-card-header fxLayout="column" fxLayoutAlign="start center">
+                <img src="assets/images/homepage/rectangle-529.png" alt="">
+              </mat-card-header>
+              <mat-card-content>
+                <h4 class="mat-headline-6 mrg16-t mrg16-b">{{blog.name}}</h4>
+                <ul class="mat-body service-box-content-list">
+                  <li>Web Research</li>
+                  <li>Data Entry</li>
+                  <li>LinkedIn Lead Generation</li>
+                  <li>Paraphrasing</li>
+                  <li>LinkedIn List Building</li>
+                  <li>Data Mining</li>
+                </ul>
+              </mat-card-content>
+              <div fxFlex></div>
+              <mat-card-actions class="mrg16-b">
+                <a href="#" class="mp-button" mat-raised-button color="primary">Read More</a>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+          <div fxFlex.gt-xs="10"></div>
+        </div>
+        <div class="bg-anima animation-learn-blogs-1">
+          <img src="assets/images/homepage/new/snowfall.gif" alt="">
+        </div>
+        <div class="bg-anima animation-learn-blogs-2">
+          <img src="assets/images/homepage/new/133894-arrow-arc.gif" alt="">
+        </div>
+      </section>
+
+      <!-- Our Store section -->
+      <section fxLayout="column" fxLayoutAlign="start center" id="our-store-section" class="text-center menu-section pd0-l pd0-r pd0-b">
+        <h2 class="section-title">Our Store</h2>
+        <div class="w-100 mrg20-t">
+          <mat-grid-list (window:resize)="handleSize($event)" [cols]="mybreakpoint" gutterSize="0" rowHeight="3:2">
+            <mat-grid-tile>
+              <a class="our-store-item" href="#">
+                <img src="../assets/images/our-store/store-1.jpg" class="w-100" />
+                <div class="store-name">
+                  <h3 class="mat-headline-5 color-white">MEN</h3>
+                </div>
+              </a>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <a class="our-store-item" href="#">
+                <img src="../assets/images/our-store/store-2.jpg" class="w-100" />
+                <div class="store-name">
+                  <h3 class="mat-headline-5 color-white">WOMEN</h3>
+                </div>
+              </a>
+            </mat-grid-tile>
+            <mat-grid-tile >
+              <a class="our-store-item" href="#">
+                <img src="../assets/images/our-store/store-3.jpg" class="w-100" />
+                <div class="store-name">
+                  <h3 class="mat-headline-5 color-white">KIDS</h3>
+                </div>
+              </a>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <a class="our-store-item" href="#">
+                <img src="../assets/images/our-store/store-4.jpg" class="w-100" />
+                <div class="store-name">
+                  <h3 class="mat-headline-5 color-white">TECH</h3>
+                </div>
+              </a>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
+      </section>
+
+      <!-- Get a Free Quote section -->
+      <section fxLayout="column" fxLayoutAlign="start center" id="get-free-quote-section" class="text-center menu-section">
+        <h2 class="section-title">Get a Free Quote</h2>
+        <div class="section-subtitle mat-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div fxLayout="row">
+          <div fxFlex fxLayout="row wrap" fxLayoutAlign="space-around">
+            <div fxLayout="column" fxLayoutAlign="start center" fxFlex.sm="100" fxFlex.gt-sm="46">
+              <img src="assets/images/homepage/contact-us.gif" alt="">
+            </div>
+            <div fxLayout="column" fxLayoutAlign="start center" fxFlex.sm="100" fxFlex.gt-sm="46">
+              <mat-tab-group mat-stretch-tabs="false"  mat-align-tabs="center" dynamicHeight class="tabs-group">
+                <mat-tab label="Contact Us">
+                  <app-contact-us></app-contact-us>
+                </mat-tab>
+                <mat-tab label="Apply for job">
+                  <app-apply-job></app-apply-job>
+                </mat-tab>
+              </mat-tab-group>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <router-outlet></router-outlet>
+
+      <app-footer></app-footer>
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

@@ -1,0 +1,37 @@
+@import './src/assets/colors';
+
+.tabs-group {
+  &.mat-mdc-tab-group {
+
+    .mat-ripple {
+      display: none;
+    }
+
+    .mdc-tab__ripple::before {
+      background: transparent;
+    }
+
+    .mdc-tab-indicator {
+      display: none;
+    }
+
+    .mdc-tab__content {
+      height: 32px;
+      border-radius: 16px;
+      background: $grey !important;
+      font-size: 18px;
+    }
+
+    .mdc-tab--active {
+      .mdc-tab__content {
+        background: $green !important;
+        box-shadow: 0 4px 2px -3px #00000054;
+      }
+    }
+
+    .mat-mdc-tab .mdc-tab__text-label {
+      color: #fff;
+      padding: 0 14px;
+    }
+  }
+}
